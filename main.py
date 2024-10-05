@@ -66,22 +66,6 @@ def save_player_hist(history):
         with open("player.hist", "x") as f:
             f.write(str(history))
 
-# def load_player_hist():
-#     if os.path.exists("player.hist"):
-#         with open("player.hist", "r") as f:
-#             hist_str = f.read()
-#             hist_dict = {}
-#             for item in hist_str.strip().split(","):
-#                 parts = item.split(":")
-#                 if len(parts) == 2:
-#                     move, count = parts
-#                     hist_dict[move.strip()] = int(count.strip())
-#
-#             return defaultdict(int, hist_dict)
-#     else:
-#         return defaultdict(int)
-#
-
 def load_player_hist():
     if os.path.exists("player.hist"):
         with open("player.hist", "r") as f:
