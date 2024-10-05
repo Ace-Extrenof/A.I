@@ -1,6 +1,6 @@
 # A.I Learnings
 > [!IMPORTANT]
-> This is only written for learning, so take everything with a grain of salt.
+> This is only written for the purpose of learning, so take everything with a grain of salt.
 
 # A.I rps
 This is a test between A.I models to find which one is more efficient at predicting the opponents move.
