@@ -1,1 +1,1 @@
-defaultdict(<class 'int'>, {'rock': 5, 'paper': 2, 'scissors': 1})
+defaultdict(<class 'int'>, {'rock': 11, 'paper': 13, 'scissors': 21})
