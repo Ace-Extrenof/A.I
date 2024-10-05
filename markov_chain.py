@@ -95,12 +95,12 @@ def game():
             ai_win_rate = ai_win / rounds * 100
             print(f"A.I win rate: {ai_win_rate:.2f}%\n")
 
-        if len(observation_sequence) >= 10:
+        if len(observation_sequence) >= 50:
             transition_matrix /= transition_matrix.sum(axis=1, keepdims=True)
 
-        if len(observation_sequence) >= 10:
-            last_3_moves = observation_sequence[-3]
-            next_observation = np.random.choice(3, p=transition_matrix[last_3_moves[0], last_3_moves[1], last_3_moves[2]])
+        if len(observation_sequence) >= 50:
+            last_50_moves = observation_sequence[-50]
+            next_observation = np.random.choice(3, p=transition_matrix[last_50_moves[0], last_50_moves[1], last_50_moves[2]])
 
         else:
             next_observation = np.random.randint(0, 3)
