@@ -30,7 +30,9 @@ lower order Markov Chain: 25%
 
 HMM(Hidden Markov Model): 12.50%
 
-higher order Markov chain: 37.50%
+higher order Markov chain(lookback of last 3 moves): 37.50%
+
+higher order Markov chain(lookback of last 50 moves): 50%
 ```
 
 So we learn that Markov chains are more efficient to predict player moves in RPS(Rock Paper Scissors), and HMM's are shit(at least when it comes RPS).
